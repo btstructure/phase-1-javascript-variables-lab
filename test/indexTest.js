@@ -3,6 +3,12 @@ const path = require('path')
 
 const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
 
+const companyName = `Scuber`;
+
+let mostProfitableNeighborhood = `Chelsea`;
+
+let companyCeo = `Susan Smith`;
+
 describe('index.js', function () {
   describe('companyName', function () {
     it('is set as Scuber', function () {
@@ -33,4 +39,5 @@ describe('index.js', function () {
       expect(js).to.match(/let companyCeo/, "Expected companyCeo to be defined using let");
     });
   });
+  
 });
